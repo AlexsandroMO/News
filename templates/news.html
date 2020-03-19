@@ -1,0 +1,49 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="row">
+<div id="div-alinha">
+    <h3>Resumo das Principais Notícias do Momento</h3>
+
+    <a id="add-link" href="/">
+        <button type="button" class="btn btn-success">Voltar</button>
+    </a>
+
+    <table class="table-round-corner" cellspacing="0">
+        <tr>
+            <th>Notícias</th>
+            <th>Ler no Site</th>
+
+        </tr>
+        {% for item in var %}
+            <tr>
+                <td><div id="passar_mouse">{{item.0}}<div id="mostrar"></div></td>
+
+                <td id="td-ajuste"><a href="{{ item.1 }}" target="blank"> {{ item.2 }}</a></td>
+            </tr>
+
+        {% endfor %}
+  
+    </table>
+</div>
+</div>
+<br>
+<br>
+<br>
+
+{% endblock content %}
+
+
+<!--
+  <br>
+        {% for item in var %}
+        <li class="list-group-item list-group-item-light">{{ item.0 }}<br><a href="{{ item.1 }}">Ler Notícia</a> | <a href="{{ item.1 }}">Link G1</a></li>
+        {% endfor %}
+
+<br>
+
+  <span><i class="fab fa-readme"></i></span>
+
+  -->
+

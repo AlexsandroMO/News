@@ -1,0 +1,35 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+<div id="div-alinha">
+    <h3>Folha de São Paulo Notícias</h3>
+
+    <a id="add-link" href="/">
+        <button type="button" class="btn btn-success">Voltar</button>
+    </a>
+
+    <table class="table-round-corner" cellspacing="0">
+        <tr>
+            <th>Notícia</th>
+            <th>Ler na Folha de São Paulo</th>
+
+        </tr>
+        {% for item in var %}
+            <tr>
+                <td><div id="passar_mouse">{{item.0}}<div id="mostrar"></div></td>
+
+                <td id="td-ajuste"><a href="{{ item.1 }}" target="blank"><span><i class="fab fa-readme"></i></span></a></td>
+            </tr>
+
+        {% endfor %}
+  
+    </table>
+</div>
+<br>
+<br>
+<br>
+
+{% endblock content %}
+
+
