@@ -1,0 +1,19 @@
+
+'''Upload documents on Github
+git clone <nome>
+<entra na pasta criada>
+git add .
+git commit -m "texto"
+git push
+git pull
+'''
+
+'''git checkout -b nome cria uma branch
+git checkout nome entra na branch
+git branch - verifica as branchs
+git checkout master - entra na master
+git merge origin "nome" 
+git push origin master - subir commit
+git branch -D "nome"- deletar branch
+'''
+
