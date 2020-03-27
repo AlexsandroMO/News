@@ -15,7 +15,29 @@
 </head>
 <body>
   <div class="container-fluid">
+    <!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark">-->
+    <nav class="navbar navbar-light" style="background-color: #db1e47;">
+      <a class="navbar-brand" href="/" style="color: #fff">All News</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/read_news_G1">G1</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="/read_news_FSP">FSP</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="/read_news_R7">R7</a>
+            </li>
 
+        </ul>
+    
+      </div>
+    </nav>
 
     {% block content %}{% endblock%}
 

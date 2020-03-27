@@ -34,6 +34,7 @@ body{
  .navbar {
     border-bottom: 1px solid #333;
     margin-bottom: 20px;
+    margin: auto;
    /* height: 80px;*/
     
 }
@@ -52,13 +53,13 @@ body{
 }
 
 #div-alinha{
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 40px;
 }
 
 h3{
     padding-top: 6px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     
 }
 
@@ -283,18 +284,18 @@ ul.messages li{
 .row{
     padding-left: 20px;
     padding-right: 10px;
-    max-width: 100%;
-}
-
-#ajusta-tabela{
-    max-width: 100%;
-    overflow: scroll
+    max-width: 65%;
 }
 
 .scrollable-content {
     overflow-x:hidden;
     overflow-y:scroll;
   }
+
+#ajusta-tabela{
+    max-width: 100%;
+    overflow: scroll
+}
 
 #ajusta-tabela::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -316,7 +317,7 @@ ul.messages li{
 
 .table-round-corner {
     margin-top: 50px;
-    width: auto;
+    width: 50px;
     text-align: center;
     overflow: hidden;
     border-collapse: separate;
@@ -419,7 +420,7 @@ h5{
 	color: rgb(209, 209, 224);
 	display:block;
   position: absolute;
-  top: 190px;
+  top: 100px;
 	left: 135px;
 
   }

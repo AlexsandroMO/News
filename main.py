@@ -59,5 +59,14 @@ def read_news_FSP():
 
   return render_template('read-news-FSP.html', var=var)
 
+@app.route('/read_news_DIA')
+def read_news_DIA():
+  varall = Progpy.news_dia()
+  var = []
+  for item in varall:
+    var.append([item[0], item[1], item[2]])
+
+  return render_template('read-news-DIA.html', var=var)
+
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=8080, debug=True)

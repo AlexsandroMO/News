@@ -2,6 +2,7 @@
 {% extends "layout.html" %}
 {% block content %}
 
+<div class="row">
 <div id="div-alinha">
     <h3>R7 Notícias</h3>
 
@@ -12,7 +13,7 @@
     <table class="table-round-corner" cellspacing="0">
         <tr>
             <th>Notícia</th>
-            <th>Ler no R7</th>
+            <th><img src="static/img/R7_logo.svg" width="50" height="50"></th>
 
         </tr>
         {% for item in var %}
@@ -26,6 +27,8 @@
   
     </table>
 </div>
+</div>
+
 <br>
 <br>
 <br>
